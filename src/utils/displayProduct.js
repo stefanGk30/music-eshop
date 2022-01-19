@@ -20,6 +20,7 @@ export const displayProduct = (product) => {
     discountPercentage,
   } = product;
 
+  document.title = `Music Shop - ${model}`;
   img.src = image;
   companyTitle.textContent = company;
   modelTitle.textContent = model;
