@@ -1,0 +1,174 @@
+[
+  {
+    "id": 0,
+    "info": {
+      "company": "reloop",
+      "model": "beatmix 2 mk2"
+    },
+    "price": 450,
+    "preview": {
+      "image": "./images/reloop-beatmix.jpeg"
+    },
+    "usage": ["home", "cafe"],
+    "discount": false,
+
+    "compatibility": "serato"
+  },
+  {
+    "id": 1,
+    "info": {
+      "company": "roland",
+      "model": "dj 505"
+    },
+    "price": 550,
+    "preview": {
+      "image": "./images/roland-505.jpeg"
+    },
+    "usage": ["bar", "cafe"],
+    "discount": false,
+    "compatibility": "serato"
+  },
+  {
+    "id": 3,
+    "info": {
+      "company": "pioneer",
+      "model": "ddj 400"
+    },
+    "price": 360,
+    "preview": {
+      "image": "./images/ddj-400.jpeg"
+    },
+    "usage": ["bar", "cafe"],
+    "discount": true,
+    "discountPercentage": 30,
+    "compatibility": "rekordbox"
+  },
+  {
+    "id": 4,
+    "info": {
+      "company": "native",
+      "model": "s4 mk3"
+    },
+    "price": 700,
+    "preview": {
+      "image": "./images/traktor-s4.jpeg"
+    },
+    "usage": ["bar", "club"],
+    "discount": true,
+    "discountPercentage": 30,
+    "compatibility": "traktor"
+  },
+  {
+    "id": 5,
+    "info": {
+      "company": "native",
+      "model": "s2 mk3"
+    },
+    "price": 450,
+    "preview": {
+      "image": "./images/traktor-s2.jpeg"
+    },
+    "usage": ["bar", "cafe"],
+    "discount": false,
+    "compatibility": "traktor"
+  },
+  {
+    "id": 6,
+    "info": {
+      "company": "hercules",
+      "model": "in pulse 300"
+    },
+    "price": 250,
+    "preview": {
+      "image": "./images/hercules-inpulse.jpeg"
+    },
+    "usage": ["home"],
+    "discount": false,
+    "compatibility": "virtual dj"
+  },
+  {
+    "id": 7,
+    "info": {
+      "company": "pioneer",
+      "model": "ddj 800"
+    },
+    "price": 800,
+    "preview": {
+      "image": "./images/ddj-800.jpeg"
+    },
+    "usage": ["bar", "cafe", "club"],
+    "discount": false,
+    "compatibility": "serato"
+  },
+  {
+    "id": 8,
+    "info": {
+      "company": "numark",
+      "model": "mixtrack platinum"
+    },
+    "price": 900,
+    "preview": {
+      "image": "./images/numark-mixtrack.jpeg"
+    },
+    "usage": ["club", "bar"],
+    "discount": false,
+    "compatibility": "traktor"
+  },
+  {
+    "id": 9,
+    "info": {
+      "company": "rane",
+      "model": "twelve mk2"
+    },
+    "price": 980,
+    "preview": {
+      "image": "./images/rane-twelve.jpeg"
+    },
+    "usage": ["bar", "club"],
+    "discount": false,
+    "compatibility": "serato"
+  },
+  {
+    "id": 10,
+    "info": {
+      "company": "pioneer",
+      "model": "ddj flx6"
+    },
+    "price": 620,
+    "preview": {
+      "image": "./images/ddj-flx6.jpeg"
+    },
+    "usage": ["bar", "cafe"],
+    "discount": true,
+    "discountPercentage": 30,
+    "compatibility": "serato"
+  },
+  {
+    "id": 11,
+    "info": {
+      "company": "rane",
+      "model": "one"
+    },
+    "price": 1270,
+    "preview": {
+      "image": "./images/rane-one.jpg"
+    },
+    "usage": ["bar", "club", "cafe"],
+    "discount": false,
+    "compatibility": "serato"
+  },
+  {
+    "id": 12,
+    "info": {
+      "company": "numark",
+      "model": "mixstream pro"
+    },
+    "price": 380,
+    "preview": {
+      "image": "./images/numark-mixstream.jpeg"
+    },
+    "usage": ["bar", "home"],
+    "discount": false,
+    "compatibility": "virtual dj"
+  }
+]

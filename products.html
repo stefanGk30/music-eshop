@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar products-navbar">
+      <div class="navbar-content section-center">
+        <button class="mobile-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="./index.html" class="nav-title">Music Logo</a>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About Us</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-control">
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="item-count">0</span>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="mobile-wrapper">
+      <aside class="mobile-menu">
+        <button class="close-mobile">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About Us</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart -->
+    <div class="cart-wrapper">
+      <aside class="cart">
+        <button class="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="cart-title">Your cart:</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-info">
+          <p>Your total is: $<span class="total-price">150</span></p>
+          <a href="#" class="checkout">checkout</a>
+        </div>
+      </aside>
+    </div>
+    <section class="filters-section">
+      <div class="section-center">
+        <div class="forms-container">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search..."
+              id="text-input"
+              autocomplete="off"
+            />
+          </form>
+
+          <form class="price-form">
+            <h4>Price</h4>
+            <span class="min">$0</span>
+            <input type="range" id="range-input" step="10" />
+            <span class="max">$100</span>
+            <p class="range-value">$50</p>
+          </form>
+        </div>
+        <div class="companies-filter">
+          <button class="company-btn active">company</button>
+          <button class="company-btn">company</button>
+          <button class="company-btn">company</button>
+          <button class="company-btn">company</button>
+          <button class="company-btn">company</button>
+        </div>
+      </div>
+    </section>
+    <section class="products-section section-center">
+      <div class="loading-container">
+        <h2 class="loading">loading...</h2>
+      </div>
+    </section>
+
+    <footer class="footer products-footer">
+      <div class="footer-content section-center">
+        <div class="footer-social">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#"> <i class="fab fa-instagram-square"></i> </a>
+        </div>
+        <p class="copyright">
+          Copyright&copy; 2020-<span class="copy-date">2022</span> The Music
+          Shop.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="./src/pages/products.js"></script>
+  </body>
+</html>

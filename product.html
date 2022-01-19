@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shop - Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar products-navbar">
+      <div class="navbar-content section-center">
+        <button class="mobile-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="./index.html" class="nav-title">Music Logo</a>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About Us</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-control">
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="item-count">0</span>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="mobile-wrapper">
+      <aside class="mobile-menu">
+        <button class="close-mobile">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About Us</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart -->
+    <div class="cart-wrapper">
+      <aside class="cart">
+        <button class="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="cart-title">Your cart:</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-info">
+          <p>Your total is: $<span class="total-price">150</span></p>
+          <a href="#" class="checkout">checkout</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="single-product section-center">
+      <div class="single-product-container">
+        <div class="single-img-container">
+          <img src="" class="single-img" alt="" />
+        </div>
+        <div class="single-info">
+          <div>
+            <h2></h2>
+            <p class="model"></p>
+            <p class="compatible">
+              Compatible with: <span class="compatible-span"></span>
+            </p>
+            <p class="usage">Ideal for: <span class="usage-span"></span></p>
+          </div>
+          <div>
+            <p class="single-price">
+              <span class="old-price"></span><span class="new-price"></span>
+            </p>
+            <button class="add-single add-btn">add to cart</button>
+          </div>
+        </div>
+        <div class="loading-container">
+          <h2 class="loading">loading...</h2>
+        </div>
+      </div>
+    </section>
+    <footer class="footer products-footer">
+      <div class="footer-content section-center">
+        <div class="footer-social">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#"> <i class="fab fa-instagram-square"></i> </a>
+        </div>
+        <p class="copyright">
+          Copyright&copy; 2020-<span class="copy-date">2022</span> The Music
+          Shop.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="./src/pages/product.js"></script>
+  </body>
+</html>

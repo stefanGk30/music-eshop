@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shop - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-content section-center">
+        <button class="mobile-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="./index.html" class="nav-title">Music Logo</a>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About Us</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="cart-control">
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="item-count">0</span>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="mobile-wrapper">
+      <aside class="mobile-menu">
+        <button class="close-mobile">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="../products.html" class="nav-link">Products</a></li>
+          <li><a href="../about.html" class="nav-link">About Us</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart -->
+    <div class="cart-wrapper">
+      <aside class="cart">
+        <button class="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="cart-title">Your cart:</h2>
+        <ul class="cart-items">
+          <!-- cart-item -->
+          <!-- <li class="cart-item">
+            <img src="./images/ddj-400.jpeg" class="cart-item-img" alt="" />
+            <div class="cart-item-info">
+              <h5>Pioneer DDJ-400</h5>
+              <p class="cart-item-price">$330</p>
+              <button class="remove-btn">remove</button>
+            </div>
+            <div class="cart-item-amount">
+              <button class="inc-amount"><i class="fas fa-plus"></i></button>
+              <p class="amount">1</p>
+              <button class="dec-amount"><i class="fas fa-minus"></i></button>
+            </div>
+          </li> -->
+          <!--  -->
+        </ul>
+        <div class="cart-info">
+          <p>Your total is: $<span class="total-price">150</span></p>
+          <a href="#" class="checkout">checkout</a>
+        </div>
+      </aside>
+    </div>
+    <!-- hero -->
+    <main class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to our store</h1>
+        <a href="./products.html" class="hero-link">See our products</a>
+      </div>
+    </main>
+
+    <!-- about -->
+    <section id="about" class="section-center">
+      <h2>Don't miss out on our current offers:</h2>
+      <div class="offers">
+        <!-- single product -->
+        <!-- <div class="product">
+          <div class="product-img">
+            <img src="./images/ddj-400.jpeg" alt="" />
+          </div>
+          <div class="product-info">
+            <h3>Pioneer DDJ-400</h3>
+            <p>
+              <span class="old-price">$350</span>
+              <span class="new-price">$330</span>
+            </p>
+          </div>
+          <div class="product-control">
+            <a href="#" class="product-control-btn">Details</a>
+            <button class="add-btn product-control-btn">Add to cart</button>
+          </div>
+        </div>-->
+        <!--  -->
+      </div>
+    </section>
+    <section id="giveaway">
+      <div class="section-center">
+        <h2 class="join-title">
+          Subscribe to our newsletter and enter the giveaway for a chance to win
+          an awesome prize!
+        </h2>
+
+        <form class="form">
+          <input
+            type="email"
+            name=""
+            id="email-input"
+            placeholder="enter your email here"
+            autocomplete="off"
+          />
+          <button type="submit">Join</button>
+        </form>
+        <!-- giveaway -->
+        <div class="giveaway-content">
+          <!-- img -->
+          <div class="prize-img">
+            <img
+              src="./images-2/laptop stand.jpeg"
+              class="laptop-stand-img"
+              alt="laptop-stand"
+            />
+          </div>
+          <!-- countdown -->
+          <div class="countdown">
+            <p class="expiration">
+              The giveaway expires on Sunday, 24 April 2022, 8:00am
+            </p>
+            <h2>You only have left:</h2>
+            <div class="countdown-container">
+              <div>
+                <h4 class="days">00</h4>
+                <span>days</span>
+              </div>
+              <div>
+                <h4 class="hours">00</h4>
+                <span>hours</span>
+              </div>
+              <div>
+                <h4 class="mins">00</h4>
+                <span>mins</span>
+              </div>
+              <div>
+                <h4 class="secs">00</h4>
+                <span>secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content section-center">
+        <div class="footer-social">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#"> <i class="fab fa-instagram-square"></i> </a>
+        </div>
+        <p class="copyright">
+          Copyright&copy; 2020-<span class="copy-date">2022</span> The Music
+          Shop.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
