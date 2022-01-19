@@ -874,6 +874,10 @@ img {
   .single-price {
     font-size: 1.3rem;
   }
+
+  .loading {
+    font-size: 2.2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .single-product {
@@ -889,6 +893,9 @@ img {
   .add-single {
     display: block;
     margin: 1rem auto;
+  }
+  .loading {
+    font-size: 2rem;
   }
 }
 
@@ -907,5 +914,8 @@ img {
 
   .single-price {
     font-size: 1.1rem;
+  }
+  .loading {
+    font-size: 1.8rem;
   }
 }
