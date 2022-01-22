@@ -11,3 +11,9 @@ cartBtn.addEventListener('click', () => {
 closeCart.addEventListener('click', () => {
   cart.classList.remove('show-cart');
 });
+
+cart.addEventListener('click', (e) => {
+  if (e.target.classList.contains('cart-wrapper')) {
+    cart.classList.remove('show-cart');
+  }
+});
