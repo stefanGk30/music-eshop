@@ -27,7 +27,6 @@ export const addToCart = (id) => {
   }
 
   setToLS('cart', cart);
-  checkDiscount();
   updateDOM();
   updatePrice();
   cartWrapper.classList.add('show-cart');
@@ -69,7 +68,12 @@ const setCartDOM = () => {
 
 const updatePrice = () => {
   const price = cart.reduce((acc, curr) => {
-    acc += curr.price * curr.amount;
+    if (!curr.discount) {
+      acc += curr.price * curr.amount;
+    } else {
+      acc += curr.newPrice * curr.amount;
+    }
+
     return acc;
   }, 0);
   totalPriceDOM.textContent = price;
@@ -81,16 +85,6 @@ const updateDOM = () => {
     return acc;
   }, 0);
   navCartCount.textContent = total;
-};
-
-const checkDiscount = () => {
-  cart = cart.map((item) => {
-    if (item.discount) {
-      const { price, discountPercentage } = item;
-      item = { ...item, price: price - (price * discountPercentage) / 100 };
-    }
-    return item;
-  });
 };
 
 const cartFunctionality = () => {

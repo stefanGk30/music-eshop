@@ -28,7 +28,19 @@ const setStore = (products) => {
     };
   });
 
+  store = checkDiscount(store);
   setToLS('store', store);
+};
+
+const checkDiscount = (arr) => {
+  return arr.map((item) => {
+    const { discount, price, discountPercentage } = item;
+    if (discount) {
+      item = { ...item, newPrice: price - (price * discountPercentage) / 100 };
+    }
+
+    return item;
+  });
 };
 
 const findProduct = (id) => {

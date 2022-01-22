@@ -7,10 +7,10 @@ const addToCartDOM = ({
   company,
   model,
   price,
+  newPrice,
   image,
   amount,
   discount,
-  discountPercentage,
 }) => {
   cartDOM.innerHTML += `
               <li class="cart-item" data-id="${id}">
@@ -18,9 +18,7 @@ const addToCartDOM = ({
             <div class="cart-item-info">
               <h5>${company} ${model}</h5>
               <p class="cart-item-price">${
-                discount
-                  ? `$${price - (price * discountPercentage) / 100}`
-                  : ` $${price}`
+                discount ? `$${newPrice}` : ` $${price}`
               }    </p>
               <button class="remove-btn">remove</button>
             </div>
