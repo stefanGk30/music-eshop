@@ -103,6 +103,7 @@ const cartFunctionality = () => {
       removeItem(id);
       if (cart.length < 1) {
         hideBtn();
+        console.log('remove');
       }
       element.remove();
     }
@@ -125,6 +126,7 @@ const cartFunctionality = () => {
       element.querySelector('.amount').textContent = amount;
       if (cart.length < 1) {
         hideBtn();
+        console.log('decrease');
       }
     }
 
@@ -144,6 +146,9 @@ const cartFunctionality = () => {
 };
 
 const init = () => {
+  if (cart.length > 0) {
+    emptyCartBtn.classList.add('show-btn');
+  }
   setCartDOM();
   updateDOM();
   updatePrice();
