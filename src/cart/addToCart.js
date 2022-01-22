@@ -7,6 +7,7 @@ const cartWrapper = get('.cart-wrapper');
 const navCartCount = get('.item-count');
 const totalPriceDOM = get('.total-price');
 const cartDOM = get('.cart-items');
+const emptyCartBtn = get('.empty-cart');
 let cart = getFromLS('cart');
 
 export const addToCart = (id) => {
@@ -29,6 +30,7 @@ export const addToCart = (id) => {
   setToLS('cart', cart);
   updateDOM();
   updatePrice();
+  emptyCartBtn.classList.add('show-btn');
   cartWrapper.classList.add('show-cart');
 };
 
@@ -116,6 +118,17 @@ const cartFunctionality = () => {
 
     updateDOM();
     updatePrice();
+    setToLS('cart', cart);
+  });
+
+  emptyCartBtn.addEventListener('click', () => {
+    cart = [];
+    updateDOM();
+    updatePrice();
+    cartDOM.innerHTML = '';
+    setTimeout(() => {
+      emptyCartBtn.classList.remove('show-btn');
+    }, 500);
     setToLS('cart', cart);
   });
 };
