@@ -89,12 +89,21 @@ const updateDOM = () => {
   navCartCount.textContent = total;
 };
 
+const hideBtn = () => {
+  setTimeout(() => {
+    emptyCartBtn.classList.remove('show-btn');
+  }, 500);
+};
+
 const cartFunctionality = () => {
   cartDOM.addEventListener('click', (e) => {
     if (e.target.classList.contains('remove-btn')) {
       const element = e.target.parentElement.parentElement;
       const id = parseInt(element.dataset.id);
       removeItem(id);
+      if (cart.length < 1) {
+        hideBtn();
+      }
       element.remove();
     }
 
@@ -114,6 +123,9 @@ const cartFunctionality = () => {
         element.remove();
       }
       element.querySelector('.amount').textContent = amount;
+      if (cart.length < 1) {
+        hideBtn();
+      }
     }
 
     updateDOM();
@@ -126,9 +138,7 @@ const cartFunctionality = () => {
     updateDOM();
     updatePrice();
     cartDOM.innerHTML = '';
-    setTimeout(() => {
-      emptyCartBtn.classList.remove('show-btn');
-    }, 500);
+    hideBtn();
     setToLS('cart', cart);
   });
 };
