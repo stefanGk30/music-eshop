@@ -14,11 +14,7 @@ export const displayStore = (store, container) => {
                 item.discount ? `$${item.price} ` : ''
               }</span>
               <span class="new-price"> ${
-                item.discount
-                  ? `$${
-                      item.price - (item.price * item.discountPercentage) / 100
-                    }`
-                  : ` $${item.price}`
+                item.discount ? `$${item.newPrice}` : ` $${item.price}`
               }    </span>
             </p>
           </div>
