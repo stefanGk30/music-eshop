@@ -17,7 +17,7 @@ export const displayProduct = (product) => {
     compatibility,
     usage,
     discount,
-    discountPercentage,
+    newPrice,
   } = product;
 
   document.title = `Music Shop - ${model}`;
@@ -28,7 +28,5 @@ export const displayProduct = (product) => {
   usageTitle.textContent = usage.map((item) => item).join(', ');
   oldPrice.classList.add(`${discount ? 'show' : 'hide'}`);
   oldPrice.textContent = `${discount ? `$${price}` : ''}`;
-  priceTitle.textContent = `$${
-    discount ? price - (price * discountPercentage) / 100 : price
-  }`;
+  priceTitle.textContent = `$${discount ? newPrice : price}`;
 };
