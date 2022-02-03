@@ -6,6 +6,10 @@ const searchForm = get('.search-form');
 const input = get('#text-input');
 const productsContainer = get('.products-section');
 
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+
 searchForm.addEventListener('keyup', (e) => {
   const value = input.value.trim().toLowerCase();
   let newStore = store.filter((item) => {
