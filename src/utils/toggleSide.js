@@ -11,3 +11,9 @@ barsBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   sidebar.classList.remove('show-mobile');
 });
+
+sidebar.addEventListener('click', (e) => {
+  if (e.target.classList.contains('mobile-wrapper')) {
+    sidebar.classList.remove('show-mobile');
+  }
+});
